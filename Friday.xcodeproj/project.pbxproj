@@ -14,6 +14,9 @@
 		D14BB39622CCD79200EB33E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BB39422CCD79200EB33E6 /* LaunchScreen.storyboard */; };
 		D14BB3A122CCD79200EB33E6 /* FridayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BB3A022CCD79200EB33E6 /* FridayTests.swift */; };
 		D14BB3AC22CCD79200EB33E6 /* FridayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BB3AB22CCD79200EB33E6 /* FridayUITests.swift */; };
+		D14BB3C022CCD88100EB33E6 /* XMBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BB3BE22CCD88100EB33E6 /* XMBaseNavigationController.swift */; };
+		D14BB3C122CCD88100EB33E6 /* XMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BB3BF22CCD88100EB33E6 /* XMBaseViewController.swift */; };
+		D14BB3C422CCD8B100EB33E6 /* XMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BB3C322CCD8B100EB33E6 /* XMHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D14BB3A722CCD79200EB33E6 /* FridayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14BB3AB22CCD79200EB33E6 /* FridayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridayUITests.swift; sourceTree = "<group>"; };
 		D14BB3AD22CCD79200EB33E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14BB3BE22CCD88100EB33E6 /* XMBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMBaseNavigationController.swift; sourceTree = "<group>"; };
+		D14BB3BF22CCD88100EB33E6 /* XMBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMBaseViewController.swift; sourceTree = "<group>"; };
+		D14BB3C322CCD8B100EB33E6 /* XMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 			children = (
 				D14BB38B22CCD79000EB33E6 /* AppDelegate.swift */,
 				D14BB38D22CCD79000EB33E6 /* ViewController.swift */,
+				D14BB3C222CCD88A00EB33E6 /* Business */,
+				D14BB3BD22CCD88100EB33E6 /* Base */,
 				D14BB38F22CCD79000EB33E6 /* Main.storyboard */,
 				D14BB39222CCD79200EB33E6 /* Assets.xcassets */,
 				D14BB39422CCD79200EB33E6 /* LaunchScreen.storyboard */,
@@ -123,6 +131,23 @@
 				D14BB3AD22CCD79200EB33E6 /* Info.plist */,
 			);
 			path = FridayUITests;
+			sourceTree = "<group>";
+		};
+		D14BB3BD22CCD88100EB33E6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D14BB3BE22CCD88100EB33E6 /* XMBaseNavigationController.swift */,
+				D14BB3BF22CCD88100EB33E6 /* XMBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D14BB3C222CCD88A00EB33E6 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				D14BB3C322CCD8B100EB33E6 /* XMHomeViewController.swift */,
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +212,7 @@
 		D14BB38022CCD79000EB33E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XM;
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = xiaoma;
@@ -256,6 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14BB3C122CCD88100EB33E6 /* XMBaseViewController.swift in Sources */,
+				D14BB3C022CCD88100EB33E6 /* XMBaseNavigationController.swift in Sources */,
+				D14BB3C422CCD8B100EB33E6 /* XMHomeViewController.swift in Sources */,
 				D14BB38E22CCD79000EB33E6 /* ViewController.swift in Sources */,
 				D14BB38C22CCD79000EB33E6 /* AppDelegate.swift in Sources */,
 			);
