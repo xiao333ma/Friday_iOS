@@ -7,9 +7,43 @@
 //
 
 import UIKit
+import Speech
 
 class XMHomeViewController: XMBaseViewController {
 
+    
+    
+    override func viewDidLoad() {
+        title = "Friday"
+        view.backgroundColor = .red
+        view.addSubview(button)
+    }
+    
+    func setup() -> Void {
+        
+        SFSpeechRecognizer.requestAuthorization { (status) in
+            switch status {
+                
+            case .authorized
+                
+            case .notDetermined:
+                <#code#>
+            case .denied:
+                <#code#>
+            case .restricted:
+                <#code#>
+            @unknown default:
+                <#code#>
+            }
+        }
+        
+    }
+    
+    @objc func test() -> Void {
+        let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-US"))
+    }
+    
+    
     private lazy var button: UIButton =  {
         let button = UIButton()
         button.backgroundColor = UIColor.gray
@@ -18,14 +52,4 @@ class XMHomeViewController: XMBaseViewController {
         button.addTarget(self, action: #selector(XMHomeViewController.test), for: .touchUpInside)
         return button
     }()
-    
-    override func viewDidLoad() {
-        title = "Friday"
-        view.backgroundColor = .red
-        view.addSubview(button)
-    }
-    
-    @objc func test() -> Void {
-        print("ddddd")
-    }
 }
